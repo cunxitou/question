@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="question-system" />
-        <module name="question-common" />
-        <module name="question-admin" />
         <module name="question-framework" />
+        <module name="question-admin" />
+        <module name="question-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

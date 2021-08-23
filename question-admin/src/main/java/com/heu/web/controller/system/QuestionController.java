@@ -31,4 +31,5 @@ public class QuestionController extends BaseController {
         //封装分页数据，并返回
         return getPageResult(questions);
     }
+
 }
