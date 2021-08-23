@@ -10,7 +10,7 @@ public interface QuestionService {
      * 查询所有问题
      * @return
      */
-    List<Question> findAll(int pageNum, int pageSize);
+    List<Question> findAll();
 
     /**
      * 通过qid查询选项

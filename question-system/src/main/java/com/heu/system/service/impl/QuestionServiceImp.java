@@ -15,7 +15,7 @@ public class QuestionServiceImp implements QuestionService {
     @Autowired
     private QuestionMapper questionMapper;
     @Override
-    public List<Question> findAll(int pageNum, int pageSize) {
+    public List<Question> findAll() {
 
         return questionMapper.findAll();
     }

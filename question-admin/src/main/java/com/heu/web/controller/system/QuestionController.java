@@ -24,11 +24,10 @@ public class QuestionController extends BaseController {
     private QuestionService questionService;
 
     @GetMapping
-    public PageResult findAll(@RequestParam(name = "pageNum", defaultValue = "1") int pageNum,
-                              @RequestParam(name = "pageSize", defaultValue = "4") int pageSize){
+    public PageResult findAll(){
         //处理分页数据
         startPage();
-        List<Question> questions = questionService.findAll(pageNum, pageSize);
+        List<Question> questions = questionService.findAll();
         //封装分页数据，并返回
         return getPageResult(questions);
     }
