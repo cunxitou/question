@@ -4,17 +4,8 @@ package com.heu.system.domain;
  * 答案类
  */
 public class Option {
-    private int oid;
-    private String optionDec;
-    private int qid;
-
-    public int getOid() {
-        return oid;
-    }
-
-    public void setOid(int oid) {
-        this.oid = oid;
-    }
+    private String optionDec;//答案描述
+    private int answer;//问题答案 0：错误  1：正确
 
     public String getOptionDec() {
         return optionDec;
@@ -24,11 +15,11 @@ public class Option {
         this.optionDec = optionDec;
     }
 
-    public int getQid() {
-        return qid;
+    public int getAnswer() {
+        return answer;
     }
 
-    public void setQid(int qid) {
-        this.qid = qid;
+    public void setAnswer(int answer) {
+        this.answer = answer;
     }
 }

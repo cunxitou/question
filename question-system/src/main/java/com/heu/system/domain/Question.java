@@ -6,18 +6,9 @@ import java.util.List;
  * 问题类
  */
 public class Question {
-    private int qid;
     private String question;
     private int qtype;
     private List<Option> options;
-
-    public int getQid() {
-        return qid;
-    }
-
-    public void setQid(int qid) {
-        this.qid = qid;
-    }
 
     public String getQuestion() {
         return question;
