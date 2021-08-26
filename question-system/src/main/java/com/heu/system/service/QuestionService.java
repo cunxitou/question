@@ -12,10 +12,4 @@ public interface QuestionService {
      */
     List<Question> findAll();
 
-    /**
-     * 通过qid查询选项
-     * @param qid
-     * @return
-     */
-    List<Option> findOptionById(Integer qid);
 }
