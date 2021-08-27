@@ -3,6 +3,9 @@ package com.heu.commom.utils;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * 数据的随机排序
+ */
 public class RandomOrder {
     public static  void  knuth(List list){
         Random random = new Random();
@@ -12,6 +15,13 @@ public class RandomOrder {
         }
     }
 
+    /**
+     * 交换数组两个索引位置
+     * @param list
+     * @param i
+     * @param index
+     * @param <T>
+     */
     private static <T> void swap(List<T> list, int i, int index){
         T temp;
         temp = list.get(i);
