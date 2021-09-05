@@ -4,9 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.heu.system.mapper.QuestionMapper">
     <resultMap id="questionMap" type="question">
+        <id column="qid" property="qid"/>
         <result column="question" property="question"/>
         <result column="qtype" property="qtype"/>
         <collection property="options" ofType="option" column="qid" select="findOptionById">
+            <id column="oid" property="oid"/>
             <result column="option_dec" property="optionDec"/>
             <result column="answer" property="answer"/>
         </collection>
@@ -15,7 +17,7 @@
         select * from tab_question
     </select>
     <select id="findOptionById" parameterType="int" resultType="option">
-        select o.option_dec, o.answer from tab_option o where qid = #{qid}
+        select o.oid, o.option_dec, o.answer from tab_option o where qid = #{qid}
     </select>
 
     <update id="add">
