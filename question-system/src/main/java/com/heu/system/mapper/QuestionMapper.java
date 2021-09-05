@@ -3,6 +3,7 @@ package com.heu.system.mapper;
 import com.heu.system.domain.Option;
 import com.heu.system.domain.Question;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,9 +16,8 @@ public interface QuestionMapper {
     List<Question> findAll();
 
     /**
-     * 通过qid查询选项
-     * @param qid
-     * @return
+     * 添加外键
      */
-    List<Option> findOptionById(int qid);
+    void add(@Param("oid") int oid, @Param("qid") int qid);
+
 }

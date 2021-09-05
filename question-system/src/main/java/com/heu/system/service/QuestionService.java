@@ -12,4 +12,5 @@ public interface QuestionService {
      */
     List<Question> findAll();
 
+    void add(int oid, int qid);
 }

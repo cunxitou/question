@@ -24,4 +24,9 @@ public class QuestionServiceImp implements QuestionService {
         return questions;
     }
 
+    @Override
+    public void add(int oid, int qid) {
+        questionMapper.add(oid, qid);
+    }
+
 }

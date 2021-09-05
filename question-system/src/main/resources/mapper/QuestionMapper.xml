@@ -18,4 +18,8 @@
         select o.option_dec, o.answer from tab_option o where qid = #{qid}
     </select>
 
+    <update id="add">
+        update tab_option set qid = #{qid} where oid = #{oid};
+    </update>
+
 </mapper>
